@@ -12,9 +12,10 @@ body {
 }
 
 .course {
-  width: 500px;
+  max-width: 500px;
   border-radius: 5px;
   margin: 50px auto;
+  padding: 0px 20px;
 }
 
 .course a {
