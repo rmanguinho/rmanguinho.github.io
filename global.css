@@ -13,9 +13,9 @@ body {
 
 .course {
   max-width: 500px;
+  width: 90%;
   border-radius: 5px;
   margin: 50px auto;
-  padding: 0px 20px;
 }
 
 .course a {
