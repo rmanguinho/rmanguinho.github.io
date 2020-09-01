@@ -7,4 +7,47 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
+  background-color: #121212;
+  color: #fff;
+}
+
+.course {
+  width: 500px;
+  border-radius: 5px;
+  margin: 50px auto;
+}
+
+.course a {
+  text-decoration: none;
+  position: relative;
+}
+
+.course h2 {
+  font-size: 30px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.course img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.course span {
+  position: absolute;
+  font-size: 18px;
+  line-height: 40px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #f33;
+  opacity: 0.8;
+  color: #FFF;
+  text-align: center;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.course:hover span {
+  opacity: 1;
 }
