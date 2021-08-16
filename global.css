@@ -7,8 +7,33 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
-  background-color: #121212;
-  color: #fff;
+  background-color: #282a36;
+  color: #f8f8f2;
+}
+
+h3 {
+  background-color: #44475a;
+  max-width: 500px;
+  width: 90%;
+  margin: 50px auto;
+  font-size: 24px;
+  color: #f8f8f2;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+h3 strong {
+  color: #ff5555;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+h3 a {
+  color: #bd93f9;
+  text-decoration: none;
 }
 
 .course {
@@ -26,7 +51,7 @@ body {
 .course h2 {
   font-size: 30px;
   line-height: 50px;
-  color: #fff;
+  color: #f8f8f2;
   text-align: center;
 }
 
