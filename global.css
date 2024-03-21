@@ -31,6 +31,12 @@ h3 strong {
   display: block;
 }
 
+h3 b {
+  color: #8BE9FD;
+  font-weight: bold;
+  font-size: 26px;
+}
+
 h3 a {
   color: #bd93f9;
   text-decoration: none;
