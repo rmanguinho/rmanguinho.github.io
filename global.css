@@ -4,65 +4,82 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-color: #0f172a;
+  --card-bg: #1e293b;
+  --text-color: #e2e8f0;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --border-color: #334155;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 10px;
-  background-color: #282a36;
-  color: #f8f8f2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 2rem;
 }
 
-h3 {
-  background-color: #44475a;
-  max-width: 500px;
-  width: 90%;
-  margin: 50px auto;
-  font-size: 24px;
-  color: #f8f8f2;
+h1 {
   text-align: center;
-  border-radius: 10px;
-  padding: 20px;
+  margin-bottom: 2rem;
+  color: #f8fafc;
 }
 
-h3 strong {
-  color: #ff5555;
-  font-weight: bold;
-  font-size: 30px;
-  margin-bottom: 10px;
-  display: block;
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-h3 b {
-  color: #8BE9FD;
-  font-weight: bold;
-  font-size: 26px;
-  display: inline-block;
+.card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s;
 }
 
-h3 a {
-  color: #bd93f9;
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  color: #f1f5f9;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.card a {
   text-decoration: none;
-}
-
-.course {
-  max-width: 500px;
-  width: 90%;
-  border-radius: 5px;
-  margin: 50px auto;
-}
-
-.course a {
-  text-decoration: none;
-  position: relative;
-}
-
-.course h2 {
-  font-size: 30px;
-  line-height: 50px;
-  color: #f8f8f2;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
   text-align: center;
+  transition: background 0.2s;
 }
 
-.course img {
-  width: 100%;
-  border-radius: 5px;
+.card a:hover {
+  background: var(--accent-hover);
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
 }
